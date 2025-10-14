@@ -1,0 +1,57 @@
+.bg-orange-100 {
+  background-color: #fff4e6 !important;
+}
+.bg-orange-200 {
+  background-color: #ffe8cc !important;
+}
+.bg-orange-300 {
+  background-color: #ffd8a8 !important;
+}
+.bg-orange-400 {
+  background-color: #b28561 !important;
+}
+.bg-orange-500 {
+  background-color: #573821 !important;
+}
+.bg-orange-600 {
+  background-color: #37210f !important;
+}
+.bg-orange-700 {
+  background-color: #361a0b !important;
+}
+.bg-orange-800 {
+  background-color: #1e0c06 !important;
+}
+.bg-orange-900 {
+  background-color: #27120c !important;
+}
+
+.hero__image {
+  width: 100vw !important;
+}
+
+.hero__title {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(0 0 0 / 0.5);
+  color: white;
+  font-size: 4.5rem;
+}
+.hero__title h2 {
+  font-size: 5rem;
+}
+.hero__title h3 {
+  font-size: 3.5rem;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #ffd8a8; 
+  }
+
+.card img{
+    height: 350px;
+    max-height: 350px;
+    overflow: hidden;
+}
