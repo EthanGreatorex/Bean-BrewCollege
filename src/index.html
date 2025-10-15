@@ -13,7 +13,6 @@
     <title>Bean & Brew Home</title>
   </head>
   <body class="bg-orange-800">
-    <!-- <a href='https://pngtree.com/freepng/coffee-shop-logo-design_20176268.html'>png image from pngtree.com/</a> -->
     <nav class="navbar navbar-expand-lg bg-orange-600 navbar-dark fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
@@ -40,14 +39,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active p-2" aria-current="page" href="#"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link p-2" href="./about.html">About</a>
             </li>
             <li class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle"
+                class="nav-link dropdown-toggle p-2"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -55,22 +56,38 @@
               >
                 Our Services
               </a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu bg-orange-600">
                 <li>
-                  <a class="dropdown-item" href="#">Restaurant booking</a>
+                  <a class="dropdown-item text-white p-2" href="#"
+                    >Restaurant booking</a
+                  >
                 </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Coffee orders</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Baking lessons</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Baked goods</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Hampers</a></li>
+                <li>
+                  <a class="dropdown-item text-white p-2" href="./coffeeorder.html"
+                    >Coffee orders</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-white p-2" href="#"
+                    >Baking lessons</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-white p-2" href="#"
+                    >Baked goods</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-white p-2" href="#">Hampers</a>
+                </li>
               </ul>
             </li>
           </ul>
-          <button class="btn text-white bg-orange-400" type="submit">
+          <button
+            class="btn text-black bg-orange-400"
+            data-bs-toggle="modal"
+            data-bs-target="#loginModal"
+          >
             Login/Register
           </button>
         </div>
@@ -89,42 +106,244 @@
       </div>
     </div>
 
-    <div class="container-fluid mt-5">
-      <div class="row">
-        <div class="col-lg-4">
+    <div class="container">
+      <h1 class="bg-orange-600 text-white text-center p-5 mt-5 rounded-4">
+        What We Offer...
+      </h1>
+    </div>
+
+    <div class="container-fluid mt-5 mb-5">
+      <div class="row g-3">
+        <div class="col-lg-4 col-md-6">
           <div class="card bg-orange-500 text-white" style="height: 30rem">
             <img src="../public/coffee.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">Pre-Order A Coffee</h5>
               <p class="card-text">
-                Tailor a coffee to your liking and have it prepared ready to collect.
+                Tailor a coffee to your liking and have it prepared ready to
+                collect.
               </p>
-              <a href="#" class="btn bg-orange-400">Start Ordering</a>
+              <a href="./coffeeorder.html" class="btn bg-orange-400">Start Ordering</a>
             </div>
           </div>
         </div>
-        <div class="col-lg-4">
-          <div class="card bg-orange-500 text-white" style="height: 30rem">
-            <img src="../public/baking.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Book a Baking Lesson</h5>
-              <p class="card-text">
-                Choose a date to join our online baking lessons! Bake some tasty treats with one of our qualified cooks.
-              </p>
-              <a href="#" class="btn bg-orange-400">View Sessons</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-md-6">
           <div class="card bg-orange-500 text-white" style="height: 30rem">
             <img src="../public/seats.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">Book a Table</h5>
               <p class="card-text">
-                View available tables at one of our multiple restaurant locations.
+                View available tables at one of our multiple restaurant
+                locations.
               </p>
               <a href="#" class="btn bg-orange-400">View Availability</a>
             </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card bg-orange-500 text-white" style="height: 30rem">
+            <img
+              src="../public/baked-goods.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pre-order Baked Goods</h5>
+              <p class="card-text">
+                Take a browse through our baked goods, freshly made each
+                morning.
+              </p>
+              <a href="#" class="btn bg-orange-400">Start Browsing</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 px-lg-5">
+          <div class="card bg-orange-500 text-white" style="height: 30rem">
+            <img src="../public/baking.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Book a Baking Lesson</h5>
+              <p class="card-text">
+                Choose a date to join our online baking lessons! Bake some tasty
+                treats with one of our qualified cooks.
+              </p>
+              <a href="#" class="btn bg-orange-400">View Sessons</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 px-lg-5">
+          <div class="card bg-orange-500 text-white" style="height: 30rem">
+            <img src="../public/hamper.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Customise a Hamper</h5>
+              <p class="card-text">
+                Looking for the perfect gift for a friend or loved one?
+                Customise a hamper full of baked goods and coffee beans to your
+                liking!
+              </p>
+              <a href="#" class="btn bg-orange-400">Start Customising</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LOGIN AND SIGN UP MODAL  -->
+    <div class="modal fade" tabindex="-1" id="loginModal">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-orange-600 text-white">
+          <div class="modal-header">
+            <h2>Login in or Register</h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- Pills navs -->
+            <ul
+              class="nav nav-pills nav-justified mb-3"
+              id="ex1"
+              role="tablist"
+            >
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link active text-white"
+                  id="tab-login"
+                  data-bs-toggle="pill"
+                  href="#pills-login"
+                  role="tab"
+                  aria-controls="pills-login"
+                  aria-selected="true"
+                >
+                  Login
+                </a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link text-white"
+                  id="tab-register"
+                  data-bs-toggle="pill"
+                  href="#pills-register"
+                  role="tab"
+                  aria-controls="pills-register"
+                  aria-selected="false"
+                >
+                  Register
+                </a>
+              </li>
+            </ul>
+            <!-- Pills navs -->
+
+            <!-- Pills content -->
+            <div class="tab-content">
+              <div
+                class="tab-pane fade show active"
+                id="pills-login"
+                role="tabpanel"
+                aria-labelledby="tab-login"
+              >
+                <form>
+                  <!-- Email input -->
+                  <div class="form-outline mb-4">
+                    <input type="email" id="loginName" class="form-control" />
+                    <label class="form-label" for="loginName">Email</label>
+                  </div>
+
+                  <!-- Password input -->
+                  <div class="form-outline mb-4">
+                    <input
+                      type="password"
+                      id="loginPassword"
+                      class="form-control"
+                    />
+                    <label class="form-label" for="loginPassword"
+                      >Password</label
+                    >
+                  </div>
+
+                  <!-- Submit button -->
+                  <button
+                    type="submit"
+                    class="btn bg-orange-400 btn-block mb-4 text-black"
+                  >
+                    Sign in
+                  </button>
+                </form>
+              </div>
+
+              <div
+                class="tab-pane fade"
+                id="pills-register"
+                role="tabpanel"
+                aria-labelledby="tab-register"
+              >
+                <form>
+                  <!-- Name input -->
+                  <div class="form-outline mb-4">
+                    <input type="text" id="registerName" class="form-control" />
+                    <label class="form-label" for="registerName">Name</label>
+                  </div>
+
+                  <!-- Username input -->
+                  <div class="form-outline mb-4">
+                    <input
+                      type="text"
+                      id="registerUsername"
+                      class="form-control"
+                    />
+                    <label class="form-label" for="registerUsername"
+                      >Username</label
+                    >
+                  </div>
+
+                  <!-- Email input -->
+                  <div class="form-outline mb-4">
+                    <input
+                      type="email"
+                      id="registerEmail"
+                      class="form-control"
+                    />
+                    <label class="form-label" for="registerEmail">Email</label>
+                  </div>
+
+                  <!-- Password input -->
+                  <div class="form-outline mb-4">
+                    <input
+                      type="password"
+                      id="registerPassword"
+                      class="form-control"
+                    />
+                    <label class="form-label" for="registerPassword"
+                      >Password</label
+                    >
+                  </div>
+
+                  <!-- Repeat Password input -->
+                  <div class="form-outline mb-4">
+                    <input
+                      type="password"
+                      id="registerRepeatPassword"
+                      class="form-control"
+                    />
+                    <label class="form-label" for="registerRepeatPassword"
+                      >Repeat password</label
+                    >
+                  </div>
+
+                  <!-- Submit button -->
+                  <button
+                    type="submit"
+                    class="btn bg-orange-400 btn-block mb-3 text-black"
+                  >
+                    Sign up
+                  </button>
+                </form>
+              </div>
+            </div>
+            <!-- Pills content -->
           </div>
         </div>
       </div>

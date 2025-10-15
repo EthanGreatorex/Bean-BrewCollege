@@ -28,30 +28,63 @@
 
 .hero__image {
   width: 100vw !important;
+  min-height: 40vh !important;
 }
 
 .hero__title {
   position: absolute;
-  top: 40%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgb(0 0 0 / 0.5);
   color: white;
-  font-size: 4.5rem;
 }
 .hero__title h2 {
-  font-size: 5rem;
+  font-size: 3rem;
 }
 .hero__title h3 {
-  font-size: 3.5rem;
+  font-size: 2rem;
 }
 
 .dropdown-menu .dropdown-item:hover {
-    background-color: #ffd8a8; 
+  background-color: #b28561;
+  color: black !important;
+}
+
+.card{
+  overflow: hidden;
+}
+
+.card img {
+  height: 350px;
+  max-height: 350px;
+  max-width: 500px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  align-self: center;
+}
+ 
+.card img:hover{
+  transform: scale(1.05);
+
+}
+
+.nav-link.active {
+  background-color: #b28561 !important;
+  color: black !important;
+  border-radius: 10px;
+}
+
+
+@media (min-width: 1024px) {
+  .hero__title h2 {
+    font-size: 5rem;
+  }
+  .hero__title h3 {
+    font-size: 3.5rem;
   }
 
-.card img{
-    height: 350px;
-    max-height: 350px;
-    overflow: hidden;
+  .hero__title{
+    top: 30%;
+  }
 }
