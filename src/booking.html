@@ -106,6 +106,16 @@
           <label for="guests" class="form-label text-light">Number of Guests</label>
           <input type="number" class="form-control" id="guests" placeholder="Enter number of guests" required />
         </div>
+        <!-- Location Dropdown -->
+        <div class="mb-3">
+          <label for="location" class="form-label text-light">Select Location</label>
+          <select class="form-control" id="location" required>
+            <option value="" disabled selected>Select your location</option>
+            <option value="Harrogate">Harrogate</option>
+            <option value="Leeds">Leeds</option>
+            <option value="Knaresborough Castle">Knaresborough Castle</option>
+          </select>
+        </div>
         <button type="submit" class="btn bg-orange-400 w-100">Confirm Booking</button>
       </form>
     </section>
