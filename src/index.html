@@ -63,7 +63,9 @@
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item text-white p-2" href="./coffeeorder.html"
+                  <a
+                    class="dropdown-item text-white p-2"
+                    href="./coffeeorder.html"
                     >Coffee orders</a
                   >
                 </li>
@@ -83,83 +85,113 @@
               </ul>
             </li>
           </ul>
-          <button
-            class="btn text-black bg-orange-400"
-            data-bs-toggle="modal"
-            data-bs-target="#loginModal"
           >
-            Login/Register
-          </button>
         </div>
       </div>
     </nav>
-    
-<div class="container-fluid g-0">
-  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="../public/hero-image.jpg" class="carousel__image w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="https://i.ytimg.com/vi/DyJTVkRP1vY/maxresdefault.jpg" class="carousel__image w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="https://dailycoffeenews.com/wp-content/uploads/2018/10/coffee-801781_1280.jpg" class="carousel__image w-100" alt="...">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-    <div class="text-center text-white">
-      <div class="hero__title p-3 px-4 rounded-3 font">
-        <h2 class="mb-1">Welcome To</h2>
-        <h3 class="fw-bold">Bean and Brew</h3>
-      </div>
-    </div>
-  </div>
-</div>
 
-    <div class="container">
+    <div class="container-fluid g-0">
+      <div
+        id="carouselExample"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="2000"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="../public/hero-image.jpg"
+              class="carousel__image w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://i.ytimg.com/vi/DyJTVkRP1vY/maxresdefault.jpg"
+              class="carousel__image w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://dailycoffeenews.com/wp-content/uploads/2018/10/coffee-801781_1280.jpg"
+              class="carousel__image w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        <div class="text-center text-white">
+          <div class="hero__title p-3 px-4 rounded-3 font">
+            <h2 class="mb-1">Welcome To</h2>
+            <h3 class="fw-bold">Bean and Brew</h3>
+            <button
+              class="btn text-black bg-orange-400 button-hover-clear"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
+            >
+              Login/Register
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container w-50">
       <h1 class="bg-orange-600 text-white text-center p-5 mt-5 rounded-4">
         What We Offer...
       </h1>
     </div>
 
-    <div class="container-fluid mt-5 mb-5">
+    <div class="container-fluid mt-1 mb-5 p-5">
       <div class="row g-3">
         <div class="col-lg-4 col-md-6">
-          <div class="card bg-orange-500 text-white" style="height: 30rem">
+          <div class="card bg-orange-500 text-white p-3" style="height: 30rem">
             <img src="../public/coffee.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">Pre-Order A Coffee</h5>
-              <p class="card-text">
+              <p class="card-text text-white-50">
                 Tailor a coffee to your liking and have it prepared ready to
                 collect.
               </p>
-              <a href="./coffeeorder.html" class="btn bg-orange-400">Start Ordering</a>
+              <a href="./coffeeorder.html" class="btn bg-orange-400 button-hover-clear"
+                >Start Ordering</a
+              >
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="card bg-orange-500 text-white" style="height: 30rem">
+        <div class="col-lg-4  col-md-6 ">
+          <div class="card bg-orange-500 text-white p-3" style="height: 30rem">
             <img src="../public/seats.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">Book a Table</h5>
-              <p class="card-text">
+              <p class="card-text text-white-50">
                 View available tables at one of our multiple restaurant
                 locations.
               </p>
-              <a href="#" class="btn bg-orange-400">View Availability</a>
+              <a href="#" class="btn bg-orange-400 button-hover-clear">View Availability</a>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
-          <div class="card bg-orange-500 text-white" style="height: 30rem">
+          <div class="card bg-orange-500 text-white p-3" style="height: 30rem">
             <img
               src="../public/baked-goods.jpg"
               class="card-img-top"
@@ -167,39 +199,39 @@
             />
             <div class="card-body">
               <h5 class="card-title">Pre-order Baked Goods</h5>
-              <p class="card-text">
+              <p class="card-text text-white-50">
                 Take a browse through our baked goods, freshly made each
                 morning.
               </p>
-              <a href="#" class="btn bg-orange-400">Start Browsing</a>
+              <a href="#" class="btn bg-orange-400 button-hover-clear">Start Browsing</a>
             </div>
           </div>
         </div>
-        <div class="col-lg-6 col-md-6 px-lg-5">
-          <div class="card bg-orange-500 text-white" style="height: 30rem">
+        <div class="col-lg-4 col-md-6">
+          <div class="card bg-orange-500 text-white p-3" style="height: 30rem">
             <img src="../public/baking.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">Book a Baking Lesson</h5>
-              <p class="card-text">
+              <p class="card-text text-white-50">
                 Choose a date to join our online baking lessons! Bake some tasty
                 treats with one of our qualified cooks.
               </p>
-              <a href="#" class="btn bg-orange-400">View Sessons</a>
+              <a href="#" class="btn bg-orange-400 button-hover-clear">View Sessons</a>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-6 col-md-6 px-lg-5">
-          <div class="card bg-orange-500 text-white" style="height: 30rem">
+        <div class="col-lg-4 col-md-6">
+          <div class="card bg-orange-500 text-white p-3" style="height: 30rem">
             <img src="../public/hamper.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">Customise a Hamper</h5>
-              <p class="card-text">
+              <p class="card-text text-white-50">
                 Looking for the perfect gift for a friend or loved one?
                 Customise a hamper full of baked goods and coffee beans to your
                 liking!
               </p>
-              <a href="#" class="btn bg-orange-400">Start Customising</a>
+              <a href="#" class="btn bg-orange-400 button-hover-clear">Start Customising</a>
             </div>
           </div>
         </div>
@@ -285,7 +317,7 @@
                   <!-- Submit button -->
                   <button
                     type="submit"
-                    class="btn bg-orange-400 btn-block mb-4 text-black"
+                    class="btn bg-orange-400 btn-block mb-4 text-black button-hover-clear"
                   >
                     Sign in
                   </button>
@@ -354,7 +386,7 @@
                   <!-- Submit button -->
                   <button
                     type="submit"
-                    class="btn bg-orange-400 btn-block mb-3 text-black"
+                    class="btn bg-orange-400 btn-block mb-3 text-black button-hover-clear"
                   >
                     Sign up
                   </button>
