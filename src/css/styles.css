@@ -179,7 +179,7 @@ button {
   font-size: 6rem;
 }
 
-.coffee-beverages {
+.food-card {
   position: relative;
   display: inline-block;
   width: 100% !important;
@@ -189,7 +189,7 @@ button {
   transition: all 0.2s ease;
 }
 
-.coffee-beverages img {
+.food-card img {
   display: block;
   width: 100% !important;
   height: 100% !important;
@@ -197,7 +197,7 @@ button {
   object-position: center;
 }
 
-.coffee-beverages-text {
+.food-card-text {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -208,7 +208,7 @@ button {
   width: 100% !important;
 }
 
-.coffee-beverages button {
+.food-card button {
   position: absolute;
   top: 80%;
   left: 50%;
@@ -220,6 +220,6 @@ button {
   font-weight: bold;
 }
 
-.coffee-beverages:hover {
+.food-card:hover {
   transform: scale(1.05);
 }
