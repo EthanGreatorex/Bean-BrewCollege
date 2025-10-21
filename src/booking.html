@@ -3,23 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bean & Brew | Restaurant Booking</title>
+
+    <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
+
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Bean & Brew | Restaurant Booking</title>
   </head>
-  <body class="bg-orange-800">
+
+  <body class="bg-orange-800 text-white">
     <nav class="navbar navbar-expand-lg bg-orange-600 navbar-dark fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html">
+        <a class="navbar-brand" href="">
           <img
             src="../public/logo.png"
             alt="Logo"
@@ -66,122 +71,204 @@
       </div>
     </nav>
 
-    <section id="bookingForm" class="container my-5 pt-5">
-      <h2 class="text-white text-center mb-4">Book a Table</h2>
-      <form>
-        <div class="mb-3">
-          <label for="name" class="form-label text-light">Full Name</label>
-          <input
-            type="text"
-            class="form-control"
-            id="name"
-            placeholder="Enter your name"
-            required
-          />
-        </div>
-        <div class="mb-3">
-          <label for="phone" class="form-label text-light">Phone Number</label>
-          <input
-            type="tel"
-            class="form-control"
-            id="phone"
-            placeholder="Enter your phone number"
-            required
-          />
-        </div>
-        <div class="mb-3">
-          <label for="date" class="form-label text-light">Booking Date</label>
-          <input type="date" class="form-control" id="date" required />
-        </div>
-        <div class="mb-3">
-          <label for="time" class="form-label text-light">Booking Time</label>
-          <input type="time" class="form-control" id="time" required />
-        </div>
-        <div class="mb-3">
-          <label for="guests" class="form-label text-light"
-            >Number of Guests</label
-          >
-          <input
-            type="number"
-            class="form-control"
-            id="guests"
-            placeholder="Enter number of guests"
-            required
-          />
-        </div>
-        <div class="mb-3">
-          <label for="location" class="form-label text-light"
-            >Select Location</label
-          >
-          <select class="form-control" id="location" required>
-            <option value="" disabled selected>Select your location</option>
-            <option value="Harrogate">Harrogate</option>
-            <option value="Leeds">Leeds</option>
-            <option value="Knaresborough Castle">Knaresborough Castle</option>
-          </select>
-        </div>
-        <button type="submit" class="btn bg-orange-400 w-100">
-          Confirm Booking
-        </button>
-      </form>
+    <!-- HERO -->
+    <section
+      class="bg-orange-600 text-white text-center py-5 mt-5 d-flex flex-column justify-content-center align-items-center"
+    >
+      <h1 class="display-5 fw-bold mb-2 mt-2 text-center">Book Your Table</h1>
+      <p class="lead fw-semibold text-white-50">
+        Reserve a cozy corner at Bean & Brew today
+      </p>
     </section>
 
-    <footer class="text-center bg-orange-600 text-white">
-      <!-- Grid container -->
-      <div class="container pt-4">
-        <!-- Section: Social media -->
-        <section class="mb-4 text-white">
-          <!-- Facebook -->
-          <a
-            data-mdb-ripple-init
-            class="btn btn-link btn-floating btn-lg text-white m-1"
-            href="#!"
-            role="button"
-            data-mdb-ripple-color="dark"
+    <!-- BOOKING FORM -->
+    <section class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+          <div class="card bg-orange-600 text-white shadow border-0 rounded-4">
+            <div class="card-body p-4 p-md-5">
+              <h2 class="text-center fw-bold text-white mb-3">
+                Reserve a Table
+              </h2>
+              <p class="text-center text-white-50 mb-4">
+                Enjoy your next meal or coffee catch-up at your nearest Bean &
+                Brew café.b
+              </p>
+
+              <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label text-white"
+                    >Full Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control bg-orange-500 border-0 text-white rounded-3"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="phone" class="form-label text-white"
+                    >Phone Number</label
+                  >
+                  <input
+                    type="tel"
+                    class="form-control bg-orange-500 border-0 text-white rounded-3"
+                    id="phone"
+                    placeholder="Enter your phone number"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="date" class="form-label text-white"
+                    >Booking Date</label
+                  >
+                  <input
+                    type="date"
+                    class="form-control bg-orange-500 border-0 text-white rounded-3"
+                    id="date"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="time" class="form-label text-white"
+                    >Booking Time</label
+                  >
+                  <input
+                    type="time"
+                    class="form-control bg-orange-500 border-0 text-white rounded-3"
+                    id="time"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="guests" class="form-label text-white"
+                    >Number of Guests</label
+                  >
+                  <input
+                    type="number"
+                    class="form-control bg-orange-500 border-0 text-white rounded-3"
+                    id="guests"
+                    placeholder="Enter number of guests"
+                    min="1"
+                    max="10"
+                    required
+                  />
+                  <div class="form-text text-white-50">
+                    (You can book between 1 and 10 guests)
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="location" class="form-label text-white"
+                    >Select Location</label
+                  >
+                  <select
+                    class="form-select bg-orange-500 border-0 text-white rounded-3"
+                    id="location"
+                    required
+                  >
+                    <option value="" disabled selected>Select a café</option>
+                    <option>Harrogate</option>
+                    <option>Leeds</option>
+                    <option>Knaresborough Castle</option>
+                  </select>
+                </div>
+
+                <div class="d-grid mt-4">
+                  <button
+                    type="submit"
+                    class="btn bg-orange-400 btn-lg fw-semibold text-black button-hover-clear rounded-3"
+                  >
+                    Confirm Booking
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-orange-600 text-white py-4 mt-5">
+      <div class="container text-center">
+        <div class="mb-3">
+          <a href="#" class="text-white me-3"
             ><i class="fab fa-facebook-f"></i
           ></a>
-
-          <!-- Twitter -->
-          <a
-            data-mdb-ripple-init
-            class="btn btn-link btn-floating btn-lg text-white m-1"
-            href="#!"
-            role="button"
-            data-mdb-ripple-color="dark"
-            ><i class="fab fa-twitter"></i
-          ></a>
-
-          <!-- Instagram -->
-          <a
-            data-mdb-ripple-init
-            class="btn btn-link btn-floating btn-lg text-white m-1"
-            href="#!"
-            role="button"
-            data-mdb-ripple-color="dark"
+          <a href="#" class="text-white me-3"
             ><i class="fab fa-instagram"></i
           ></a>
-
-          <!-- Linkedin -->
-          <a
-            data-mdb-ripple-init
-            class="btn btn-link btn-floating btn-lg text-white m-1"
-            href="#!"
-            role="button"
-            data-mdb-ripple-color="dark"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-        </section>
-        <!-- Section: Social media -->
+          <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p class="text-white-50 mb-0">
+          © 2025 Bean & Brew — All Rights Reserved
+        </p>
       </div>
-      <!-- Grid container -->
-
-      <!-- Copyright -->
-      <div class="text-center p-3">
-        © 2025 Copyright:
-        <a class="text-white-50" href="./index.html">beanandbrew.com</a>
-      </div>
-      <!-- Copyright -->
     </footer>
+
+    <!-- OFFCANVAS SERVICES -->
+    <div
+      class="offcanvas offcanvas-start bg-orange-600 text-white"
+      tabindex="-1"
+      id="offcanvasServices"
+      style="width: 300px"
+    >
+      <div class="offcanvas-header border-bottom border-orange-400">
+        <h5 class="offcanvas-title fw-semibold">Our Services</h5>
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="offcanvas"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="list-unstyled">
+          <li>
+            <a
+              href="./booking.html"
+              class="text-white text-decoration-none d-block py-2 offcanvas-button-hover"
+              >Restaurant Booking</a
+            >
+          </li>
+          <li>
+            <a
+              href="./coffeeorder.html"
+              class="text-white text-decoration-none d-block py-2 offcanvas-button-hover"
+              >Coffee Orders</a
+            >
+          </li>
+          <li>
+            <a
+              href="bakinglessons.html"
+              class="text-white text-decoration-none d-block py-2 offcanvas-button-hover"
+              >Baking Lessons</a
+            >
+          </li>
+          <li>
+            <a
+              href="bakedgoods.html"
+              class="text-white text-decoration-none d-block py-2 offcanvas-button-hover"
+              >Baked Goods</a
+            >
+          </li>
+          <li>
+            <a
+              href="hampers.html"
+              class="text-white text-decoration-none d-block py-2 offcanvas-button-hover"
+              >Hampers</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <!-- OFFCANVAS SERVICES MENU -->
     <div
@@ -243,9 +330,15 @@
       </div>
     </div>
 
+    <script>
+      // Prevent selecting past dates
+      const today = new Date().toISOString().split("T")[0];
+      document.getElementById("date").setAttribute("min", today);
+    </script>
+
+    <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
   </body>
