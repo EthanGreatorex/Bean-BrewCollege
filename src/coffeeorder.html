@@ -105,7 +105,7 @@
             <div class="card-body text-white rounded-5 bg-orange-1100">
               <h5 class="card-title">Flat white/ Cappuccino</h5>
               <p class="card-text">This drink is made with espresso, steamed milk, and milk foam, creating a latte with decorative art on top.</p>
-              <a href="#orderForm" class="btn" style="background-color:#b28561;">Tap to order</a>
+              <a href="#orderForm" class="btn bg-orange-500">Tap to order</a>
             </div>
           </div>
         </div>
@@ -115,7 +115,7 @@
             <div class="card-body text-white rounded-5 bg-orange-1000">
               <h5 class="card-title">Iced Coffee</h5>
               <p class="card-text">A refreshing blend of espresso, milk, and ice — perfect for a warm day.</p>
-              <a href="#orderForm" class="btn bg-orange-400" >Tap to order</a>
+              <a href="#orderForm" class="btn bg-orange-500" >Tap to order</a>
             </div>
           </div>
           </div>
@@ -125,7 +125,7 @@
             <div class="card-body text-white rounded-5 bg-orange-1000">
             <h5 class="card-title">Fresh-espresso</h5>
             <p class="card-text">A rich, aromatic shot of pure coffee energy — freshly brewed from premium beans for a smooth, bold taste that espresso lovers crave.</p>
-            <a href="#orderForm" class="btn bg-orange-400">Tap to order</a>
+            <a href="#orderForm" class="btn bg-orange-500">Tap to order</a>
             </div>
             </div>
           </div>
@@ -135,7 +135,7 @@
             <div class="card-body text-white bg-orange-1000 rounded-5">
             <h5 class="card-title">Mocha</h5>
             <p class="card-text">A delicious mix of espresso, steamed milk, and rich chocolate — perfect for those who love a sweet coffee treat.</p>
-            <a href="#" class="btn bg-orange-400">Tap to order </a>
+            <a href="#" class="btn bg-orange-500">Tap to order </a>
           </div>
           </div>
           </div>
@@ -145,7 +145,7 @@
             <div class="card-body text-white bg-orange-1000 rounded-5">
             <h5 class="card-title">Latte</h5>
             <p class="card-text">A mooth blend of espresso and steamed milk, topped with foam for a creamy, balanced coffee taste.</p>
-            <a href="#" class="btn bg-orange-400">Tap to order </a>
+            <a href="#" class="btn bg-orange-500">Tap to order </a>
           </div>
           </div>
           </div>
@@ -155,34 +155,41 @@
             <div class="card-body text-white bg-orange-1000 rounded-5">
             <h5 class="card-title">Americano</h5>
             <p class="card-text">A bold yet smooth coffee made by diluting rich espresso with hot water, giving it a strong flavor and lighter body.</p>
-            <a href="#" class="btn bg-orange-400">Tap to order </a>
+            <a href="#" class="btn bg-orange-500">Tap to order </a>
           </div>
           </div>
           </div>
       </div> 
     </div>
+    <div class="container mt-5 p-5 text-white rounded-5">
+      <h1 class="p-5 bg-orange-500 rounded-5 text-center "> customize your order</h1>
+      <p class="p-4 bg-orange-500 text-center">Welcome to Beans and Brew, <br> Add syrup, extra sugar, or milk preferences.</p>
+    </div>
+    <div class="container mt-2">
+      <p class="p-3 bg-orange-500 text-white rounded-5 text-center">Coffee beans </p>
+    </div>
 
-   <div class="container-img position-relative mt-5">
-  <img 
-    src="../public/cofee landscape.jpg" 
-    class="img-fluid w-100" 
-    style="height: 500px; object-fit: cover;" 
-    alt="Coffee Landscape"
-  >
-  <div class="position-absolute top-50 start-50 translate-middle text-center text-dark">
-    <h2 class="fw-bold">Coffee</h2>
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-2">
+          <div class="card bg-orange-400" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text">ed</p>
+          <a href="#" class="btn bg-orange-500">tap to add</a>
   </div>
 </div>
+        </div>
       </div>
     </div>
-    <div class="container mt-5"></div>
     <div class="container mt-5" id="orderForm">
-  <div class="card p-4 rounded-5 text-white bg-orange-1000">
+  <div class="card p-4 rounded-5 text-white bg-orange-500">
     <h3 class="mb-4">Place Your Coffee Order</h3>
     <form>
       <div class="mb-3 bg-orange-1100 text-white">
         <label for="coffeeType" class="form-label">Select Coffee</label>
-        <select class="form-select bg-orange-1100 text-white" id="coffeeType" required>
+        <select class="form-select bg-orange-1100 text-dark" id="coffeeType" required>
           <option value="" disabled selected>Select a coffee</option>
           <option value="Cappuccino">Cappuccino</option>
           <option value="Latte">Latte</option>
@@ -192,17 +199,17 @@
  
       <div class="mb-3">
         <label for="quantity" class="form-label">Quantity</label>
-        <input type="number" class="form-control bg-orange-1100 " id="quantity" min="1" placeholder="Enter quantity" required>
+        <input type="number" class="form-control bg-orange-1100 text-white" id="quantity" min="1" placeholder="Enter quantity" required>
       </div>
  
       <div class="mb-3">
         <label for="pickupTime" class="form-label">Pickup Time</label>
-        <input type="time" class="form-control bg-orange-1100 text-white" id="pickupTime" required>
+        <input type="time" class="form-control bg-orange-1100 text-dark" id="pickupTime" required>
       </div>
  
       <div class="mb-3">
         <label for="storeLocation" class="form-label">Store Location</label>
-        <select class="form-select bg-orange-1100 text-white" id="storeLocation" required>
+        <select class="form-select bg-orange-1100 text-dark" id="storeLocation" required>
           <option value="" disabled selected>Tap to select a location</option>
           <option value="Downtown">Belper</option>
           <option value="Campus">Derby college</option>
