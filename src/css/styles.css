@@ -105,7 +105,9 @@ button {
   border-radius: 10px;
 }
 
-
+input::placeholder{
+  color: rgb(197, 197, 197) !important;
+}
 
 .timeline {
   border-left: 1px solid hsl(0, 0%, 90%);
