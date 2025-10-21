@@ -231,3 +231,80 @@ button {
 .food-card:hover {
   transform: scale(1.05);
 }
+
+.baking-lesson-title {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(0 0 0 / 0.5);
+  color: white;
+  font-size: 6rem;
+}
+
+.baking-lesson-image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.baking-lesson-header {
+  height: 55vh;
+  overflow: hidden;
+}
+
+.baking-lessons {
+  position: relative;
+  display: inline-block;
+  width: 100% !important;
+  height: 30rem !important;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.baking-lesson button {
+  position: absolute;
+  bottom: 0.1%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 9rem;
+  height: 2rem;
+  background-color: #b28561;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.baking-lessons:hover {
+  transform: scale(1.05);
+}
+
+.baking-lessons-text {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(0 0 0 / 0.5);
+  font-size: clamp(0.5rem, 1.7rem, 3rem);
+  text-align: center;
+  width: 100% !important;
+}
+
+.baking-lessons img {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center;
+}
+
+.baking-info{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(53, 53, 52, 0.5);
+  font-size: clamp(0.5rem, 1.1rem, 3rem);
+  text-align: center;
+  width: 100% !important;
+}
