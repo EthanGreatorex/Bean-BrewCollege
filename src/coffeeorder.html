@@ -9,7 +9,7 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
-      <link
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
@@ -17,12 +17,12 @@
     <title>Bean & Brew | Coffee</title>
   </head>
   <body class="bg-orange-800">
+    <
     <nav class="navbar navbar-expand-lg bg-orange-600 navbar-dark fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html">
+        <a class="navbar-brand" href="">
           <img
             src="../public/logo.png"
-            alt="https://pngtree.com/freepng/coffee-shop-logo-design_20176268.html'>png image from pngtree.com/"
             alt="Logo"
             width="70"
             height="70"
@@ -50,175 +50,224 @@
             <li class="nav-item">
               <a class="nav-link p-2" href="./about.html">About</a>
             </li>
-            <li class="nav-item dropdown">
+            <!-- OFFCANVAS TRIGGER -->
+            <li class="nav-item">
               <a
-                class="nav-link active dropdown-toggle p-2"
+                class="nav-link p-2 active"
                 href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasServices"
+                aria-controls="offcanvasServices"
               >
                 Our Services
               </a>
-              <ul class="dropdown-menu bg-orange-600">
-                <li>
-                  <a class="dropdown-item text-white p-2" href="#"
-                    >Restaurant booking</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item text-white p-2"
-                    href="./coffeeorder.html"
-                    >Coffee orders</a>
-                </li>
-                <li>
-                  <a class="dropdown-item text-white p-2" href=""
-                    >Baking lessons</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item text-white p-2" href="./bakedgoods.html"
-                    >Baked goods</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item text-white p-2" href="hampers.html">Hampers</a>
-                </li>
-              </ul>
             </li>
-          </ul>>
+          </ul>
         </div>
       </div>
     </nav>
-    <div class="container mt-5 pt-5 mt-5 text-white ">
-      <h1 class="mb-5 p-5 rounded-5 bg-orange-600">Welcome to Bean & Brew Coffee Orders</h1>
+    <div class="container mt-5 pt-5 text-white">
+      <h1 class="mb-5 p-5 rounded-5" style="background-color: #573821">
+        Welcome to Bean & Brew Coffee Orders
+      </h1>
     </div>
     <div class="container mt-5">
       <div class="row justify-content-center">
         <div class="col-md-4 mb-4">
-          <div class="card bg-orange-600" style="width: 100%; height: 100%;">
-            <img src="../public/coffee2-851555.jpg" class="card-img-top" alt="Hot Coffee">
+          <div
+            class="card"
+            style="width: 100%; height: 100%; background-color: #b28561"
+          >
+            <img
+              src="../public/coffee2-851555.jpg"
+              class="card-img-top"
+              alt="Hot Coffee"
+            />
             <div class="card-body text-white rounded-5 bg-orange-1100">
               <h5 class="card-title">Flat white/ Cappuccino</h5>
-              <p class="card-text text-white-50">This drink is made with espresso, steamed milk, and milk foam, creating a latte with decorative art on top.</p>
-              <a href="#orderForm" class="btn button-hover-clear bg-orange-400">Tap to order</a>
+              <p class="card-text">
+                This drink is made with espresso, steamed milk, and milk foam,
+                creating a latte with decorative art on top.
+              </p>
+              <a href="#orderForm" class="btn bg-orange-500">Tap to order</a>
             </div>
           </div>
         </div>
         <div class="col-md-4 mb-4">
-          <div class="card bg-orange-600" style="width: 100%; height: 100%;">
-            <img src="../public/ice cofeee-8605853.jpg" class="card-img-top" alt="Iced Coffee">
+          <div class="card bg-orange-400" style="width: 100%; height: 100%">
+            <img
+              src="../public/ice cofeee-8605853.jpg"
+              class="card-img-top"
+              alt="Iced Coffee"
+            />
             <div class="card-body text-white rounded-5 bg-orange-1000">
               <h5 class="card-title">Iced Coffee</h5>
-              <p class="card-text text-white-50">A refreshing blend of espresso, milk, and ice — perfect for a warm day.</p>
-              <a href="#orderForm" class="btn button-hover-clear bg-orange-400" >Tap to order</a>
+              <p class="card-text">
+                A refreshing blend of espresso, milk, and ice — perfect for a
+                warm day.
+              </p>
+              <a href="#orderForm" class="btn bg-orange-500">Tap to order</a>
             </div>
           </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card bg-orange-600" style="width: 100%; height: 100%;">
-            <img src="../public/fresh-espresso.jpg" class="card-img-top" alt="fresh-espresso">
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card bg-orange-400" style="width: 100%; height: 100%">
+            <img
+              src="../public/fresh-espresso.jpg"
+              class="card-img-top"
+              alt="fresh-espresso"
+            />
             <div class="card-body text-white rounded-5 bg-orange-1000">
-            <h5 class="card-title">Fresh-espresso</h5>
-            <p class="card-text text-white-50">A rich, aromatic shot of pure coffee energy — freshly brewed from premium beans for a smooth, bold taste that espresso lovers crave.</p>
-            <a href="#orderForm" class="btn button-hover-clear bg-orange-400">Tap to order</a>
+              <h5 class="card-title">Fresh-espresso</h5>
+              <p class="card-text">
+                A rich, aromatic shot of pure coffee energy — freshly brewed
+                from premium beans for a smooth, bold taste that espresso lovers
+                crave.
+              </p>
+              <a href="#orderForm" class="btn bg-orange-500">Tap to order</a>
             </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card bg-orange-400" style="width: 100%; height: 100%">
+            <img src="../public/mocha.jpg" class="card-img-top" alt="Mocha" />
+            <div class="card-body text-white bg-orange-1000 rounded-5">
+              <h5 class="card-title">Mocha</h5>
+              <p class="card-text">
+                A delicious mix of espresso, steamed milk, and rich chocolate —
+                perfect for those who love a sweet coffee treat.
+              </p>
+              <a href="#" class="btn bg-orange-500">Tap to order </a>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
-            <div class="card bg-orange-600" style="width:100%;height: 100%;">
-            <img src="../public/mocha.jpg" class="card-img-top" alt="Mocha">
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card bg-orange-400" style="width: 100%; height: 100%">
+            <img
+              src="../public/easy-caramel-latte-image.jpg"
+              class="card-img-top"
+              alt="Latte"
+            />
             <div class="card-body text-white bg-orange-1000 rounded-5">
-            <h5 class="card-title">Mocha</h5>
-            <p class="card-text text-white-50">A delicious mix of espresso, steamed milk, and rich chocolate — perfect for those who love a sweet coffee treat.</p>
-            <a href="#" class="btn button-hover-clear bg-orange-400">Tap to order </a>
+              <h5 class="card-title">Latte</h5>
+              <p class="card-text">
+                A mooth blend of espresso and steamed milk, topped with foam for
+                a creamy, balanced coffee taste.
+              </p>
+              <a href="#" class="btn bg-orange-500">Tap to order </a>
+            </div>
           </div>
-          </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card bg-orange-600" style="width:100%;height: 100%;">
-            <img src="../public/easy-caramel-latte-image.jpg" class="card-img-top" alt="Latte">
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card bg-orange-400" style="width: 100%; height: 100%">
+            <img
+              src="../public/americano.jpg"
+              class="card-img-top"
+              alt="Americano"
+            />
             <div class="card-body text-white bg-orange-1000 rounded-5">
-            <h5 class="card-title">Latte</h5>
-            <p class="card-text text-white-50">A mooth blend of espresso and steamed milk, topped with foam for a creamy, balanced coffee taste.</p>
-            <a href="#" class="btn button-hover-clear bg-orange-400">Tap to order </a>
+              <h5 class="card-title">Americano</h5>
+              <p class="card-text">
+                A bold yet smooth coffee made by diluting rich espresso with hot
+                water, giving it a strong flavor and lighter body.
+              </p>
+              <a href="#" class="btn bg-orange-500">Tap to order </a>
+            </div>
           </div>
-          </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="card bg-orange-600" style="width:100%;height: 100%;">
-            <img src="../public/americano.jpg" class="card-img-top" alt="Americano">
-            <div class="card-body text-white bg-orange-1000 rounded-5">
-            <h5 class="card-title">Americano</h5>
-            <p class="card-text text-white-50">A bold yet smooth coffee made by diluting rich espresso with hot water, giving it a strong flavor and lighter body.</p>
-            <a href="#" class="btn button-hover-clear bg-orange-400">Tap to order </a>
-          </div>
-          </div>
-          </div>
-      </div> 
+        </div>
+      </div>
     </div>
     <div class="container mt-5 p-5 text-white rounded-5">
-      <h1 class="p-5 bg-orange-600 rounded-5 text-center "> customize your order</h1>
-      <p class="p-4 bg-orange-600 text-center text-white-50">Welcome to Beans and Brew, <br> Add syrup, extra sugar, or milk preferences.</p>
+      <h1 class="p-5 bg-orange-500 rounded-5 text-center">
+        customize your order
+      </h1>
+      <p class="p-4 bg-orange-500 text-center">
+        Welcome to Beans and Brew, <br />
+        Add syrup, extra sugar, or milk preferences.
+      </p>
     </div>
     <div class="container mt-2">
-      <p class="p-3 bg-orange-500 text-white rounded-5 text-center">Coffee beans </p>
+      <p class="p-3 bg-orange-500 text-white rounded-5 text-center">
+        Coffee beans
+      </p>
     </div>
 
     <div class="container mt-5">
       <div class="row justify-content-center">
         <div class="col-md-2">
-          <div class="card bg-orange-400" style="width: 18rem;">
-          <img src="../public/arabica bean.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-          <h5 class="card-title text-white">Arabica</h5>
-          <a href="#" class="btn button-hover-clear bg-orange-500">tap to add</a>
-  </div>
-</div>
+          <div class="card bg-orange-400" style="width: 18rem">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text">ed</p>
+              <a href="#" class="btn bg-orange-500">tap to add</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     <div class="container mt-5" id="orderForm">
-  <div class="card p-4 rounded-5 text-white bg-orange-500">
-    <h3 class="mb-4">Place Your Coffee Order</h3>
-    <form>
-      <div class="mb-3 bg-orange-1100 text-white">
-        <label for="coffeeType" class="form-label">Select Coffee</label>
-        <select class="form-select bg-orange-1100 text-dark" id="coffeeType" required>
-          <option value="" disabled selected>Select a coffee</option>
-          <option value="Cappuccino">Cappuccino</option>
-          <option value="Latte">Latte</option>
-          <option value="Iced Coffee">Iced Coffee</option>
-        </select>
+      <div class="card p-4 rounded-5 text-white bg-orange-500">
+        <h3 class="mb-4">Place Your Coffee Order</h3>
+        <form>
+          <div class="mb-3 bg-orange-1100 text-white">
+            <label for="coffeeType" class="form-label">Select Coffee</label>
+            <select
+              class="form-select bg-orange-1100 text-dark"
+              id="coffeeType"
+              required
+            >
+              <option value="" disabled selected>Select a coffee</option>
+              <option value="Cappuccino">Cappuccino</option>
+              <option value="Latte">Latte</option>
+              <option value="Iced Coffee">Iced Coffee</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="quantity" class="form-label">Quantity</label>
+            <input
+              type="number"
+              class="form-control bg-orange-1100 text-white"
+              id="quantity"
+              min="1"
+              placeholder="Enter quantity"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="pickupTime" class="form-label">Pickup Time</label>
+            <input
+              type="time"
+              class="form-control bg-orange-1100 text-dark"
+              id="pickupTime"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="storeLocation" class="form-label">Store Location</label>
+            <select
+              class="form-select bg-orange-1100 text-dark"
+              id="storeLocation"
+              required
+            >
+              <option value="" disabled selected>
+                Tap to select a location
+              </option>
+              <option value="Downtown">Belper</option>
+              <option value="Campus">Derby college</option>
+              <option value="Mall">city center</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn bg-orange-400">Submit Order</button>
+        </form>
       </div>
- 
-      <div class="mb-3">
-        <label for="quantity" class="form-label">Quantity</label>
-        <input type="number" class="form-control bg-orange-1100 text-white" id="quantity" min="1" placeholder="Enter quantity" required>
-      </div>
- 
-      <div class="mb-3">
-        <label for="pickupTime" class="form-label">Pickup Time</label>
-        <input type="time" class="form-control bg-orange-1100 text-dark" id="pickupTime" required>
-      </div>
- 
-      <div class="mb-3">
-        <label for="storeLocation" class="form-label">Store Location</label>
-        <select class="form-select bg-orange-1100 text-dark" id="storeLocation" required>
-          <option value="" disabled selected>Tap to select a location</option>
-          <option value="Downtown">Belper</option>
-          <option value="Campus">Derby college</option>
-          <option value="Mall">city center</option>
-        </select>
-      </div>
- 
-      <button type="submit" class="btn bg-orange-400" >Submit Order</button>
-    </form>
-  </div>
-</div>
-           
-     <footer class="text-center bg-orange-600 text-white">
+    </div>
+
+    <footer class="text-center bg-orange-600 text-white">
       <!-- Grid container -->
       <div class="container pt-4">
         <!-- Section: Social media -->
@@ -274,7 +323,127 @@
       </div>
       <!-- Copyright -->
     </footer>
-  
+
+    <!-- OFFCANVAS SERVICES MENU -->
+    <div
+      class="offcanvas offcanvas-start bg-orange-600 text-white"
+      tabindex="-1"
+      id="offcanvasServices"
+      aria-labelledby="offcanvasServicesLabel"
+      style="width: 300px"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasServicesLabel">
+          Our Services
+        </h5>
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="list-unstyled">
+          <li>
+            <a
+              href="./booking.html"
+              class="text-white text-decoration-none d-block mb-2 offcanvas-button-hover p-2"
+              >Restaurant Booking</a
+            >
+          </li>
+          <li>
+            <a
+              href="./coffeeorder.html"
+              class="text-white text-decoration-none d-block mb-2 offcanvas-button-hover p-2"
+              >Coffee Orders</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-white text-decoration-none d-block mb-2 offcanvas-button-hover p-2"
+              >Baking Lessons</a
+            >
+          </li>
+          <li>
+            <a
+              href="bakedgoods.html"
+              class="text-white text-decoration-none d-block mb-2 offcanvas-button-hover p-2"
+              >Baked Goods</a
+            >
+          </li>
+          <li>
+            <a
+              href="hampers.html"
+              class="text-white text-decoration-none d-block mb-2 offcanvas-button-hover p-2"
+              >Hampers</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- OFFCANVAS SERVICES MENU -->
+    <div
+      class="offcanvas offcanvas-start bg-orange-600 text-white"
+      tabindex="-1"
+      id="offcanvasServices"
+      aria-labelledby="offcanvasServicesLabel"
+      style="width: 300px"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasServicesLabel">
+          Our Services
+        </h5>
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="list-unstyled">
+          <li>
+            <a
+              href="./booking.html"
+              class="text-white text-decoration-none d-block mb-2 offcanvas-button-hover p-2"
+              >Restaurant Booking</a
+            >
+          </li>
+          <li>
+            <a
+              href="./coffeeorder.html"
+              class="text-white text-decoration-none d-block mb-2 offcanvas-button-hover p-2"
+              >Coffee Orders</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-white text-decoration-none d-block mb-2 offcanvas-button-hover p-2"
+              >Baking Lessons</a
+            >
+          </li>
+          <li>
+            <a
+              href="bakedgoods.html"
+              class="text-white text-decoration-none d-block mb-2 offcanvas-button-hover p-2"
+              >Baked Goods</a
+            >
+          </li>
+          <li>
+            <a
+              href="hampers.html"
+              class="text-white text-decoration-none d-block mb-2 offcanvas-button-hover p-2"
+              >Hampers</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

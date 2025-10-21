@@ -99,6 +99,14 @@ button {
   border-radius: 10px;
 }
 
+.offcanvas-button-hover:hover{
+  background-color: #b28561 !important;
+  color: black !important;
+  border-radius: 10px;
+}
+
+
+
 .timeline {
   border-left: 1px solid hsl(0, 0%, 90%);
   position: relative;
