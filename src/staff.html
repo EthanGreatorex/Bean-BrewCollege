@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Bean & Brew Home</title>
+  </head>
+  <body class="bg-orange-800">
+    <nav class="navbar navbar-expand-lg bg-orange-600 navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+          <img
+            src="../public/logo.png"
+            alt="Logo"
+            width="70"
+            height="70"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link p-2" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link p-2 active" href="./staff.html"
+                >Meet the Staff</a
+              >
+            </li>
+            <!-- OFFCANVAS TRIGGER -->
+            <li class="nav-item">
+              <a
+                class="nav-link p-2"
+                href="#"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasServices"
+                aria-controls="offcanvasServices"
+              >
+                Our Services
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section
+      class="bg-orange-600 text-white text-center py-5 mt-5 d-flex flex-column justify-content-center align-items-center"
+    >
+      <h1 class="display-5 fw-bold mb-2 mt-2 text-center">
+        Meet our Lovely Staff
+      </h1>
+      <p class="lead fw-semibold text-white-50">
+        We take pride in our dedicated and driven staff
+      </p>
+    </section>
+
+    <div class="container mt-2">
+      <div class="row">
+        <div class="col-6 col-lg-3 mt-3 mb-3">
+          <div
+            class="card bg-orange-500 text-white p-3 d-flex flex-column"
+            style="max-height: 400px; min-height: 400px"
+          >
+            <img
+              src="../public/team-member-2.jpg"
+              alt="sourdough bread"
+              class="card-img-top"
+              loading="lazy"
+              style="min-height: 200px; max-height: 200px"
+            />
+            <div class="card-body text-center d-flex flex-column flex-grow-1">
+              <h3 class="card-title">Rachel Akhtar</h3>
+              <p class="card-text text-white-50 flex-grow-1">
+                General manager of Bean and Brew.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 mt-3 mb-3">
+          <div
+            class="card bg-orange-500 text-white p-3 d-flex flex-column"
+            style="max-height: 400px; min-height: 400px"
+          >
+            <img
+              src="../public/team-member-4.jpg"
+              alt="sourdough bread"
+              class="card-img-top"
+              loading="lazy"
+              style="min-height: 200px; max-height: 200px"
+            />
+            <div class="card-body text-center d-flex flex-column flex-grow-1">
+              <h3 class="card-title">Katherine Manzaneque</h3>
+              <p class="card-text text-white-50 flex-grow-1">
+                Harrogate store manager.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 mt-3 mb-3">
+          <div
+            class="card bg-orange-500 text-white p-3 d-flex flex-column"
+            style="max-height: 400px; min-height: 400px"
+          >
+            <img
+              src="../public/team-member-5.jpg"
+              alt="sourdough bread"
+              class="card-img-top"
+              loading="lazy"
+              style="min-height: 200px; max-height: 200px"
+            />
+            <div class="card-body text-center d-flex flex-column flex-grow-1">
+              <h3 class="card-title">Cristina Neal</h3>
+              <p class="card-text text-white-50 flex-grow-1">
+                Leeds store manager.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 mt-3 mb-3">
+          <div
+            class="card bg-orange-500 text-white p-3 d-flex flex-column"
+            style="max-height: 400px; min-height: 400px"
+          >
+            <img
+              src="../public/team-member-6.jpg"
+              alt="sourdough bread"
+              class="card-img-top"
+              loading="lazy"
+              style="min-height: 200px; max-height: 200px"
+            />
+            <div class="card-body text-center d-flex flex-column flex-grow-1">
+              <h3 class="card-title">Amina Parkes</h3>
+              <p class="card-text text-white-50 flex-grow-1">
+                Knaresborough store manager.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 mt-3 mb-3">
+          <div
+            class="card bg-orange-500 text-white p-3 d-flex flex-column"
+            style="max-height: 400px; min-height: 400px"
+          >
+            <img
+              src="../public/team-member-1.jpg"
+              alt="sourdough bread"
+              class="card-img-top"
+              loading="lazy"
+              style="min-height: 200px; max-height: 200px"
+            />
+            <div class="card-body text-center d-flex flex-column flex-grow-1">
+              <h3 class="card-title">John Rossa</h3>
+              <p class="card-text text-white-50 flex-grow-1">
+                Marketing manager.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 mt-3 mb-3">
+          <div
+            class="card bg-orange-500 text-white p-3 d-flex flex-column"
+            style="max-height: 400px; min-height: 400px"
+          >
+            <img
+              src="../public/team-member-3.jpg"
+              alt="sourdough bread"
+              class="card-img-top"
+              loading="lazy"
+              style="min-height: 200px; max-height: 200px"
+            />
+            <div class="card-body text-center d-flex flex-column flex-grow-1">
+              <h3 class="card-title">Gabriel Vlad</h3>
+              <p class="card-text text-white-50 flex-grow-1">
+                Marketing assistant.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 mt-3 mb-3">
+          <div
+            class="card bg-orange-500 text-white p-3 d-flex flex-column"
+            style="max-height: 400px; min-height: 400px"
+          >
+            <img
+              src="../public/team-member-7.jpeg"
+              alt="sourdough bread"
+              class="card-img-top"
+              loading="lazy"
+              style="min-height: 200px; max-height: 200px"
+            />
+            <div class="card-body text-center d-flex flex-column flex-grow-1">
+              <h3 class="card-title">Vinay Rutty</h3>
+              <p class="card-text text-white-50 flex-grow-1">Head of legal.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3 mt-3 mb-3">
+          <div
+            class="card bg-orange-500 text-white p-3 d-flex flex-column"
+            style="max-height: 400px; min-height: 400px"
+          >
+            <img
+              src="../public/team-member-8.jpg"
+              alt="sourdough bread"
+              class="card-img-top"
+              loading="lazy"
+              style="min-height: 200px; max-height: 200px"
+            />
+            <div class="card-body text-center d-flex flex-column flex-grow-1">
+              <h3 class="card-title">Magda Rodriguez</h3>
+              <p class="card-text text-white-50 flex-grow-1">Head of HR.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- OFFCANVAS SERVICES MENU -->
+    <div
+      class="offcanvas offcanvas-start bg-orange-600 text-white"
+      tabindex="-1"
+      id="offcanvasServices"
+      aria-labelledby="offcanvasServicesLabel"
+      style="width: 300px"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasServicesLabel">
+          Our Services
+        </h5>
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="list-unstyled">
+          <li>
+            <a
+              href="./booking.html"
+              class="text-white text-decoration-none d-block mb-2 offcanvas-button-hover p-2"
+              >Restaurant Booking</a
+            >
+          </li>
+          <li>
+            <a
+              href="./coffeeorder.html"
+              class="text-white text-decoration-none d-block mb-2 offcanvas-button-hover p-2"
+              >Coffee Orders</a
+            >
+          </li>
+          <li>
+            <a
+              href="bakinglessons.html"
+              class="text-white text-decoration-none d-block mb-2 offcanvas-button-hover p-2"
+              >Baking Lessons</a
+            >
+          </li>
+          <li>
+            <a
+              href="bakedgoods.html"
+              class="text-white text-decoration-none d-block mb-2 offcanvas-button-hover p-2"
+              >Baked Goods</a
+            >
+          </li>
+          <li>
+            <a
+              href="hampers.html"
+              class="text-white text-decoration-none d-block mb-2 offcanvas-button-hover p-2"
+              >Hampers</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <footer class="text-center bg-orange-600 text-white">
+      <div class="container pt-4">
+        <section class="mb-4 text-white">
+          <a
+            class="btn btn-link btn-floating btn-lg text-white m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            class="btn btn-link btn-floating btn-lg text-white m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            class="btn btn-link btn-floating btn-lg text-white m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            class="btn btn-link btn-floating btn-lg text-white m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </section>
+      </div>
+      <div class="text-center p-3">
+        © 2025 Copyright:
+        <a class="text-white-50" href="./index.html">beanandbrew.com</a>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
